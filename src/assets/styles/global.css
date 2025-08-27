@@ -3,14 +3,9 @@
 @theme {
     --color-primary: #6d16df;
     --color-secondary: #cfff65;
-       
-
-
 
 }
 
-
-*{
+* {
     font-family: "Bricolage Grotesque", sans-serif;
-    
 }

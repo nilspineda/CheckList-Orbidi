@@ -31,9 +31,6 @@ CheckList-Orbidi es una herramienta para la gestión digital y organización de 
 
 ---
 
-
----
-
 ## Comandos principales
 
 | Comando                  | Función                                     |
@@ -52,9 +49,3 @@ CheckList-Orbidi es una herramienta para la gestión digital y organización de 
 GPL-3.0
 
 ---
-
-## Autor
-
-Creado por **Nils Pineda**  
-Sitio web: [nilspineda.com](https://nilspineda.com)
-
