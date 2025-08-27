@@ -9,96 +9,140 @@ const Title = "Pre Memoria";
 ---
 
 <Layout>
-   <div
-  class="flex flex-col items-center justify-center min-h-screen bg-base-200 w-screen overflow-x-hidden bg-gradient-to-br from-white via-gray-100 to-lime-200"
->
-  <Image src={logo} alt="Logo" class="w-35" />
-  <h1 class="text-4xl font-bold text-primary">{Title}</h1>
+    <div
+        class="flex flex-col items-center justify-center min-h-screen bg-base-200 w-screen overflow-x-hidden bg-gradient-to-br from-white via-gray-100 to-lime-200"
+    >
+        <Image src={logo} alt="Logo" class="w-35" />
+        <h1 class="text-4xl font-bold text-primary">{Title}</h1>
 
-  <div class="m-10 w-full">
-    <div class="flex items-center justify-center w-full">
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-6"
-      >
-        <!-- Bloque WEB -->
-        <div
-          class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 lg:hover:scale-105 transition-transform"
-        >
-        <h2 class="text-3xl font-bold text-primary mt-4">WEB</h2>
-          <img src="WEB.svg" class="w-48 h-48" alt="WEB" />
-          <div
-            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 w-full font-bold"
-          >
-            <a
-              href="#"
-              class="text-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform justify-center items-center"
-              >Copy</a
-            >
-            <a
-              href="#"
-              class="text-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform justify-center items-center"
-              >Diseño</a
-            >
-            <a
-              href="#"
-              class="text-center justify-center items-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform"
-              >IMP</a
-            >
-          </div>
-        </div>
+        <div class="m-10 w-full">
+            <div class="flex items-center justify-center w-full">
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full px-6"
+                >
+                    <!-- Bloque WEB -->
+                    <div
+                        class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 lg:hover:scale-105 transition-transform"
+                    >
+                        <h2 class="text-3xl font-bold text-primary mt-4">
+                            WEB
+                        </h2>
+                        <img src="WEB.svg" class="w-48 h-48" alt="WEB" />
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 w-full font-bold"
+                        >
+                            <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Copy
+                                </span>
+                            </a>
+                             <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Diseño
+                                </span>
+                            </a>
+                             <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    IMP
+                                </span>
+                            </a>
+                        </div>
+                    </div>
 
-        <!-- Bloque RRSS -->
-        <div
-          class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 lg:hover:scale-105 transition-transform"
-        >
-        <h2 class="text-3xl font-bold text-primary mt-4">RRSS</h2>
-          <img src="RRSS.svg" class="w-48 h-48" alt="RRSS" />
-          <div
-            class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full justify-items-center font-bold"
-          >
-            <a
-              href="#"
-              class="text-center w-full max-w-xs rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform"
-              >Copy /Estrategia</a
-            >
-            <a
-              href="#"
-              class="text-center w-full max-w-xs rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform justify-self-center"
-            >
-              Diseño
-            </a>
-          </div>
-        </div>
+                    <!-- Bloque RRSS -->
+                    <div
+                        class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 lg:hover:scale-105 transition-transform"
+                    >
+                        <h2 class="text-3xl font-bold text-primary mt-4">
+                            RRSS
+                        </h2>
+                        <img src="RRSS.svg" class="w-48 h-48" alt="RRSS" />
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6 w-full justify-items-center font-bold"
+                        >
+                             <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Copy/Estrategia
+                                </span>
+                            </a>
+                              <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Diseño
+                                </span>
+                            </a>
+                        </div>
+                    </div>
 
-        <!-- Bloque SEO -->
-        <div
-          class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 lg:hover:scale-105 transition-transform"
-        >
-        <h2 class="text-3xl font-bold text-primary mt-4">SEO</h2>
-          <img src="SEO.svg" class="w-48 h-48" alt="SEO" />
-          <div
-            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 w-full font-bold"
-          >
-            <a
-              href="#"
-              class="text-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform"
-              >Copy</a
-            >
-            <a
-              href="#"
-              class="text-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform"
-              >Analista</a
-            >
-            <a
-              href="#"
-              class="text-center w-full rounded-2xl p-4 bg-gray-100 shadow hover:scale-105 transition-transform"
-              >IMP</a
-            >
-          </div>
+                    <!-- Bloque SEO -->
+                    <div
+                        class="flex flex-col items-center justify-center bg-white rounded-2xl shadow p-6 hover:scale-105 transition-transform"
+                    >
+                        <h2 class="text-3xl font-bold text-primary mt-4">
+                            SEO
+                        </h2>
+                        <img src="SEO.svg" class="w-48 h-48" alt="SEO" />
+                        <div
+                            class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6 w-full font-bold"
+                        >
+                              <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Copy
+                                </span>
+                            </a>
+                              <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    Analista
+                                </span>
+                            </a>
+                             <a
+                                href="#"
+                                class="relative inline-block w-full rounded-2xl p-[2px] hover:bg-gradient-to-br from-white via-gray-100 to-primary shadow hover:scale-105 transition-transform"
+                            >
+                                <span
+                                    class="block rounded-2xl bg-gray-100 p-4 text-center font-bold hover:text-black"
+                                >
+                                    IMP
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-</div>
-
 </Layout>
