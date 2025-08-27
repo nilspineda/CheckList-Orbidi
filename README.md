@@ -1,46 +1,60 @@
-# Astro Starter Kit: Basics
+# CheckList-Orbidi
 
-```sh
-npm create astro@latest -- --template basics
-```
+**Creador:** Nils Pineda  
+**Sitio web:** [nilspineda.com](https://nilspineda.com)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+---
 
-## 🚀 Project Structure
+## Descripción
 
-Inside of your Astro project, you'll see the following folders and files:
+CheckList-Orbidi es una herramienta para la gestión digital y organización de tareas en proyectos orientados a WEB, RRSS y SEO, segmentando procesos en dos fases: **PRE MEMORIA** y **POST MEMORIA**.
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+---
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Estructura del Proyecto
 
-## 🧞 Commands
+### PRE MEMORIA
 
-All commands are run from the root of the project, from a terminal:
+| WEB                | RRSS                   | SEO                |
+|--------------------|-----------------------|--------------------|
+| - Copy             | - Copy y Estrategia   | - Copy             |
+| - Diseño UX/UI     | - Diseño              | - Analista         |
+| - Implementación   |                       | - Implementación   |
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### POST MEMORIA
 
-## 👀 Want to learn more?
+| WEB                | RRSS                   | SEO                |
+|--------------------|-----------------------|--------------------|
+| - Copy             | - Copy y Estrategia   | - Copy             |
+| - Diseño UX/UI     | - Diseño              | - Analista         |
+| - Implementación   |                       | - Implementación   |
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+---
+
+
+---
+
+## Comandos principales
+
+| Comando                  | Función                                     |
+|--------------------------|---------------------------------------------|
+| `npm install`            | Instala dependencias                        |
+| `npm run dev`            | Servidor de desarrollo                      |
+| `npm run build`          | Construye la versión de producción          |
+| `npm run preview`        | Previsualiza la versión de producción       |
+| `npm run astro ...`      | Ejecuta comandos adicionales de Astro       |
+| `npm run astro -- --help`| Ayuda de la CLI Astro                      |
+
+---
+
+## Licencia
+
+GPL-3.0
+
+---
+
+## Autor
+
+Creado por **Nils Pineda**  
+Sitio web: [nilspineda.com](https://nilspineda.com)
+
