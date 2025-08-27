@@ -10,8 +10,3 @@
     font-family: "Bricolage Grotesque", sans-serif;
 }
 
-
-a:hover {
-        background-color: var(--color-primary);
-        color: white;
-    }
