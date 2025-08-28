@@ -19,3 +19,15 @@
   border-radius: 10px;
   padding: 2px 4px;
 }
+
+/* Asegurar que los checkboxes sean interactivos */
+.chk-activo {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Asegurar que los checkboxes no estén cubiertos */
+.chk-activo {
+  position: relative;
+  z-index: 1;
+}
