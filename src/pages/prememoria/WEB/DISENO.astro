@@ -1,0 +1,81 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Diseño";
+const migaPan = "Pre Memoria / Web";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center"
+    >
+        <div class="flex gap-8 items-center">
+            <a href="/"><Image src={logo} alt="Logo" class="w-35" /></a>
+            <h1 class="text-5xl text-black">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-4 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-8"
+        >
+            <a href="/Prememoria" class="hover:scale-105">{migaPan}</a>
+            <span>{title}</span>
+        </p>
+    </div>
+
+    <div class="w-full p-12 h-dvh">
+        <div>
+            <h2 class="text-xl font-bold">
+                Investigación y recolección de información
+            </h2>
+            <div class="flex flex-col">
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Revisé comentarios en Clickup para validar información
+                        relevante del proyecto.</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Analicé si el Brief contaba con Web actual (y confirmé
+                        si deseaba o no el mismo contenido), Web de referencia,
+                        tips y/o estructura web solicitada.</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Revisé la carpeta del cliente (textos, videos, carpetas
+                        de kit diligenciadas)</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Tuve en cuenta el contexto, productos y servicios
+                        solicitados en el brief o figma.</span
+                    >
+                </label>
+
+                <h2 class="text-xl font-bold mt-8">
+                    Redacción y construcción de contenido
+                </h2>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Tuve en cuenta el contexto, productos y servicios
+                        solicitados en el brief o figma.</span
+                    >
+                </label>
+            </div>
+        </div>
+
+        <CheckboxCounter />
+    </div>
+</LayoutsChecklist>

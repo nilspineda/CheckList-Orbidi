@@ -1,0 +1,32 @@
+---
+---
+
+<div class="mt-4 font-semibold flex items-center gap-4 bg-lime-400 fixed p-2 rounded z-10">
+  <div id="contador-activos">Items: 0 / 0</div>
+  <button id="resetChecks" type="button" class="px-4 py-1 bg-red-400 rounded hover:bg-gray-300 transition">Reset</button>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    function actualizarContador() {
+      const checkboxes = document.querySelectorAll('.chk-activo');
+      const activos = Array.from(checkboxes).filter(cb => cb.checked).length;
+      const total = checkboxes.length;
+      const texto = `Items: ${activos} / ${total}`;
+      document.getElementById('contador-activos').innerText = texto;
+    }
+
+    const checkboxes = document.querySelectorAll('.chk-activo');
+
+    checkboxes.forEach(cb => {
+      cb.addEventListener('change', actualizarContador);
+    });
+
+    document.getElementById('resetChecks').addEventListener('click', () => {
+      checkboxes.forEach(cb => cb.checked = false);
+      actualizarContador();
+    });
+
+    actualizarContador();
+  });
+</script>

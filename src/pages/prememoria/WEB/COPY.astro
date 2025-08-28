@@ -7,6 +7,8 @@ const migaPan = "Pre Memoria / Web";
 
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro"
 ---
 
 <LayoutsChecklist>
@@ -25,33 +27,80 @@ import Image from "astro/components/Image.astro";
         </p>
     </div>
 
-    <div class="w-full p-8">
+    <div class="w-full p-12 h-dvh">
         <div>
-            <h2 class="text-xl">Investigación y recolección de información</h2>
+            <h2 class="text-xl font-bold">
+                1. Investigación y recolección de información
+            </h2>
             <div class="flex flex-col">
                 <label>
-  <input type="checkbox" />
-  <span>Revisé comentarios en Clickup para validar información relevante del proyecto.</span>
-</label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Revisé comentarios en Clickup para validar información
+                        relevante del proyecto.</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Analicé si el Brief contaba con Web actual (y confirmé
+                        si deseaba o no el mismo contenido), Web de referencia,
+                        tips y/o estructura web solicitada.</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Revisé la carpeta del cliente (textos, videos, carpetas
+                        de kit diligenciadas)</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Tuve en cuenta el contexto, productos y servicios
+                        solicitados en el brief o figma.</span
+                    >
+                </label>
 
-<label>
-  <input type="checkbox" />
-  <span>Analicé si el Brief contaba con Web actual (y confirmé si deseaba o no el mismo contenido), Web de referencia, tips y/o estructura web solicitada.</span>
-</label>
-
-<label>
-  <input type="checkbox" />
-  <span>Revisé la carpeta del cliente (textos, videos, carpetas de kit diligenciadas)</span>
-</label>
-
-<label>
-  <input type="checkbox" />
-  <span>Tuve en cuenta el contexto, productos y servicios solicitados en el brief o figma.</span>
-</label>
-
+                <h2 class="text-xl font-bold mt-8">
+                    2. Redacción y construcción de contenido
+                </h2>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Integré el nombre comercial proporcionado por el
+                        cliente, garantizando coherencia con su identidad de
+                        marca.</span
+                    >
+                </label>
+                 <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >La web quedó con el tono y sujeto gramatical solicitado en los campos correspondientes del brief, y en caso de no haberse especificado, se realizó de acuerdo al contexto del negocio.</span
+                    >
+                </label>
+                 <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >La web cuenta con mínimo 3 apartados y su estructura web acorde al brief.</span
+                    >
+                </label>
+                 <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Verifiqué que las descripciones cuentan con el título H1 y que los párrafos quedaron de 4 líneas o más (si superó las 4 líneas, conservé los espacios).</span
+                    >
+                </label>
+                 <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Dejé todo el contenido de la web en castellano. (Excepto palabras puntuales que el cliente maneje en otro idioma. Ej: Portfolio)</span
+                    >
+                </label>
             </div>
+            <CheckboxCounter client:load />
         </div>
     </div>
+
 </LayoutsChecklist>
-
-
