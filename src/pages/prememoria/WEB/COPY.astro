@@ -26,9 +26,10 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro"
             <span>{title}</span>
         </p>
     </div>
-
+ 
     <div class="w-full p-12 h-dvh">
         <div>
+            <CheckboxCounter client:load />
             <h2 class="text-xl font-bold">
                 1. Investigación y recolección de información
             </h2>
@@ -99,8 +100,8 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro"
                     >
                 </label>
             </div>
-            <CheckboxCounter client:load />
         </div>
     </div>
-
+    
+   
 </LayoutsChecklist>
