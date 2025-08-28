@@ -26,8 +26,18 @@
   cursor: pointer;
 }
 
-/* Asegurar que los checkboxes no estén cubiertos */
-.chk-activo {
+/* Asegurar que los checkboxes siempre estén visibles */
+/* .chk-activo {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 }
+
+/* Evitar que otros elementos interfieran */
+/* label {
+  position: relative;
+} */
+
+/* Asegurar espacio dinámico para el footer */
+/* body {
+  padding-bottom: 4rem; /* Altura del footer 
+} */ 
