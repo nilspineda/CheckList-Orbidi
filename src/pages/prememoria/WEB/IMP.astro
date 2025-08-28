@@ -1,0 +1,200 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Implementación";
+const migaPan = "Pre Memoria / Web";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+  <div
+    class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+  >
+    <div class="flex gap-8 items-center flex-col lg:flex-row">
+      <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+      <h1 class="text-5xl text-black font-semibold">{title}</h1>
+    </div>
+    <p
+      class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+    >
+      <a href="/Prememoria" class="hover:scale-105">{migaPan}</a>
+      <span class="ml-2">{title}</span>
+    </p>
+  </div>
+
+<div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto space-y-8">
+  <section>
+    <h2 class="text-2xl font-bold mb-4">1. Preparación e insumos</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Revisé comentarios en Clickup para validar información relevante del proyecto.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se integró el nombre comercial proporcionado por el cliente</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se tuvo en cuenta el contexto, productos y servicios especificados en el Figma.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se valida si el proyecto aplicaba o no para compra de dominio, en caso de que si, se confirma que se encuentra el check de dominio comprado en Clickup (no aplica para página en staying).</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El dominio corresponde al proporcionado por el cliente en el brief y lo verifiqué en correo maestro</span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">2. Implementación de diseño y estructura web</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se implementó el logo y el favicon provistos por el cliente, en coherencia con los lineamientos y solicitudes recibidas.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con mínimo 3 apartados y su estructura web acorde al Figma</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con márgenes, imágenes acordes, iconos en contacto.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Si el proyecto es versión BASIC, validé que las imágenes se encuentren acordes al contenido de los apartados</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con footer con logo, menú, información de contacto incluyendo RRSS linkeadas y legales.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con botón de WhatsApp.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con botón CTA.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web One Page cuenta con sus respectivos anclajes.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se aplicó correctamente la jerarquización de los títulos H1, H2 y H3.</span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">3. Funcionalidad y configuración técnica</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con botones funcionales y botón de accesibilidad.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El formulario de contacto o de reservas es funcional y corresponde al correo creado por el SMTP.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El correo de configuración por defecto se cambió al correo <a href="mailto:no-reply@dominio.com" class="text-blue-600 underline">no-reply@dominio.com</a>.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El correo vinculado a WooCommerce corresponde al del cliente o a uno tipo “no-reply” configurado por nosotros (KD – web con tienda o KD – ecom).</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La e-commerce cuenta con pasarela de pagos, carrito funcional y registro de usuario.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con la configuración SMTP y DNS.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web contiene los accesos del WordPress actualizados y con /KD-SysAd en los campos de Clickup.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El link del markup y de producción se encuentran actualizados.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con Search Console y Google Analytics.</span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">4. Legales y cumplimiento normativo</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Los textos legales cuentan con información del cliente, márgenes, fechas correctas y links correctos.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con los datos del beneficiario en legales (Nombre, NIF, Razón social, CIF).</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>El titular del dominio es igual al nombre del beneficiario.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Se ha respetado la directriz de no incluir CTA en las secciones legales y contacto.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>En caso de que aplique, se encuentran los datos públicos del whois activos en Don Dominio.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con el Material publicitario Kit Digital (Emblema UE, Plan de Recuperación, NextGenerationEU).</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web cuenta con una página de error 404 implementada.</span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">5. Accesibilidad y adaptabilidad</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>La web es responsive y se adapta correctamente a los layouts de diseño en PC, tablet y móvil.</span>
+      </label>
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>Los criterios de accesibilidad evaluados abordan adecuadamente aspectos fundamentales como contraste mínimo, propósito reconocible de los enlaces, enlaces de salto enfocados, orden del foco y estructura de encabezados/idioma, asegurando el cumplimiento de los requerimientos mínimos de accesibilidad web.</span>
+      </label>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="text-2xl font-bold mb-4">6. Migración y entrega final</h2>
+    <div class="flex flex-col space-y-3">
+      <label class="flex items-start gap-2">
+        <input type="checkbox" class="chk-activo mt-1" />
+        <span>En caso de que aplique, la web se encuentra migrada, con las capturas correspondientes y la bitácora.</span>
+      </label>
+    </div>
+  </section>
+</div>
+</LayoutsChecklist>
+<CheckboxCounter

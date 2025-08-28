@@ -17,13 +17,12 @@ import '../assets/styles/global.css';
 			rel="stylesheet"
 		/>
 
-		
 		<title>Checklist orbidi</title>
 	</head>
-	<body>
-		<slot />
+	<body class="min-h-screen flex flex-col overflow-x-hidden">
+		<main class="flex-grow">
+			<slot />
+		</main>
 		<Footer />
-
 	</body>
-	
 </html>
