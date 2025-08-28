@@ -8,7 +8,7 @@ const migaPan = "Pre Memoria / Web";
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
 
-import CheckboxCounter from "../../../components/CheckboxCounter.astro"
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
 ---
 
 <LayoutsChecklist>
@@ -26,7 +26,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro"
             <span>{title}</span>
         </p>
     </div>
- 
+
     <div class="w-full p-12 h-dvh">
         <div>
             <CheckboxCounter client:load />
@@ -75,33 +75,100 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro"
                         marca.</span
                     >
                 </label>
-                 <label>
+                <label>
                     <input type="checkbox" class="chk-activo" />
                     <span
-                        >La web quedó con el tono y sujeto gramatical solicitado en los campos correspondientes del brief, y en caso de no haberse especificado, se realizó de acuerdo al contexto del negocio.</span
+                        >La web quedó con el tono y sujeto gramatical solicitado
+                        en los campos correspondientes del brief, y en caso de
+                        no haberse especificado, se realizó de acuerdo al
+                        contexto del negocio.</span
                     >
                 </label>
-                 <label>
+                <label>
                     <input type="checkbox" class="chk-activo" />
                     <span
-                        >La web cuenta con mínimo 3 apartados y su estructura web acorde al brief.</span
+                        >La web cuenta con mínimo 3 apartados y su estructura
+                        web acorde al brief.</span
                     >
                 </label>
-                 <label>
+                <label>
                     <input type="checkbox" class="chk-activo" />
                     <span
-                        >Verifiqué que las descripciones cuentan con el título H1 y que los párrafos quedaron de 4 líneas o más (si superó las 4 líneas, conservé los espacios).</span
+                        >Verifiqué que las descripciones cuentan con el título
+                        H1 y que los párrafos quedaron de 4 líneas o más (si
+                        superó las 4 líneas, conservé los espacios).</span
                     >
                 </label>
-                 <label>
+                <label>
                     <input type="checkbox" class="chk-activo" />
                     <span
-                        >Dejé todo el contenido de la web en castellano. (Excepto palabras puntuales que el cliente maneje en otro idioma. Ej: Portfolio)</span
+                        >Dejé todo el contenido de la web en castellano.
+                        (Excepto palabras puntuales que el cliente maneje en
+                        otro idioma. Ej: Portfolio)</span
                     >
+                </label>
+
+                <h2 class="text-xl font-bold mt-8">
+                    3. Revisión de estilo y calidad
+                </h2>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >La web cuenta con textos sin errores ortográficos y sin
+                        lorem (y si tenía web actual, validé errores
+                        ortográficos).</span
+                    >
+                </label>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span
+                        >Revisé o cambié el tono del texto que acompaña los
+                        iconos de las redes sociales en el footer. (Ej: Síguenos
+                        o Sígueme)</span
+                    >
+                </label>
+
+                <h2 class="text-xl font-bold mt-8">
+                    4. Validaciones técnicas y de usabilidad (desde copy)
+                </h2>
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span>
+                        La web cuenta con Reviews de Google Maps (incluido el
+                        mapa) y RRSS.
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span>
+                        La web cuenta con botones funcionales y botón de
+                        accesibilidad.
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span> La web cuenta con botón CTA. </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span>
+                        La web cuenta con los formatos de teléfono, horarios,
+                        dirección y precios correctos.
+                    </span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="chk-activo" />
+                    <span>
+                        Validé que en caso de que el cliente no tuviera
+                        información de contacto, dejé solo correo electrónico y
+                        número telefónico.
+                    </span>
                 </label>
             </div>
         </div>
     </div>
-    
-   
 </LayoutsChecklist>

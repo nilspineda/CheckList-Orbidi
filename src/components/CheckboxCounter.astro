@@ -1,28 +1,40 @@
----
----
-
-<div class="font-semibold flex items-center gap-4 bg-lime-400 fixed p-2 rounded z-10 top-4 right-4">
+<div class="font-semibold flex items-center gap-4 bg-lime-400 fixed p-2 rounded z-10 top-48 lg:top-4 right-4">
   <div id="contador-activos">Items: 0 / 0</div>
   <button id="resetChecks" type="button" class="px-4 py-1 bg-red-400 rounded hover:bg-gray-300 transition">Reset</button>
 </div>
 
 <script is:inline>
   document.addEventListener('DOMContentLoaded', () => {
+    const STORAGE_KEY = "checksGuardados";
+
     function actualizarContador() {
       const checkboxes = document.querySelectorAll('.chk-activo');
       const activos = Array.from(checkboxes).filter(cb => cb.checked).length;
       const total = checkboxes.length;
       document.getElementById('contador-activos').innerText = `Items: ${activos} / ${total}`;
+
+      // Guardar estados en localStorage
+      const estados = Array.from(checkboxes).map(cb => cb.checked);
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(estados));
     }
 
     const checkboxes = document.querySelectorAll('.chk-activo');
 
+    // Restaurar estado desde localStorage
+    const guardados = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+    checkboxes.forEach((cb, i) => {
+      if (guardados[i]) cb.checked = true;
+    });
+
+    // Escuchar cambios
     checkboxes.forEach(cb => {
       cb.addEventListener('change', actualizarContador);
     });
 
+    // Botón reset
     document.getElementById('resetChecks').addEventListener('click', () => {
       checkboxes.forEach(cb => cb.checked = false);
+      localStorage.removeItem(STORAGE_KEY);
       actualizarContador();
     });
 

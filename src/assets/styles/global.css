@@ -10,3 +10,12 @@
     font-family: "Bricolage Grotesque", sans-serif;
 }
 
+.chk-activo:checked + span {
+  text-decoration: line-through;
+  color: #888;              /* cambia el color a gris */
+  font-style: italic;       /* cursiva */
+  opacity: 0.3;             /* más tenue */
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  padding: 2px 4px;
+}
