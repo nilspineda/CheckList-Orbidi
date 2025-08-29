@@ -1,0 +1,801 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Copy & Estrategia";
+const migaPan = "Pre Memoria / Web";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Prememoria" class="hover:scale-105">{migaPan}</a>
+            <span class="ml-2">{title}</span>
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    1. Presentación del negocio
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Presentación del negocio usa el nombre comercial</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Imágenes concuerdan con la categoría del proyecto</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Texto en diapositiva condensa toda la información
+                            del cliente y tiene buena ortografía</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Imágenes se ubican en el espacio presupuestado (3
+                            Imágenes)</span
+                        >
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    2. Redacción y construcción de contenido
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Integré el nombre comercial proporcionado por el
+                            cliente, garantizando coherencia con su identidad de
+                            marca.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto IG+FB: Recuadro inferior izquierdo blanco
+                            muestra biografía con nombre y categoría
+                            correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto LinkedIn: Se deja comentario con enlace a
+                            documento donde se encuentra la descripción
+                            correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto LinkedIn: Descripción del perfil tiene
+                            CTAs, es acorde al cliente, es coherente, con buena
+                            ortografía y tiene cohesión.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto LinkedIn: Descripción del perfil se
+                            encuentra en carpeta interna de COPY.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Biografía de Instagram no supera los 150
+                            caracteres, sin contar categoría, nombre, enlaces o
+                            direcciones fijadas.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Lema de LinkedIn no supera los 120 caracteres sin
+                            contar el nombre ni la categoría.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Links empleados omiten la representación del
+                            protocolo seguro de transferencia de hipertexto
+                            (https) y no llevan punto final.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Perfil optimizado LinkedIn: Se deja un comentario
+                            en diapositiva Perfil Optimizado con el enlace al
+                            documento tipo Word y este documento se encuentra en
+                            la carpeta interna de copy.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Categoría empleada en el perfil optimizado es la
+                            misma de la diapositiva HORARIO DE PUBLICACIONES.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Descripción de LinkedIn no emplea más de media
+                            cuartilla, es acorde al proyecto y contiene 2 CTAs
+                            priorizando web y teléfono.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La información en la biografía no se repite y tiene
+                            buena ortografía.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">3. Publicaciones</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se deja un comentario por publicación indicando
+                            COPY de esta.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Línea de contenido de la publicación es
+                            correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Caption y Copy corresponden a Línea de contenido,
+                            son coherentes, con buena ortografía y tienen
+                            cohesión.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Hashtags usados corresponden a la Línea de
+                            contenido.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Caption usado NO se repite.</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Fuente empleada en captions es SEN y su tamaño es
+                            10 o 9.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Interlineado 1,15 o Sencillo si se requiere por
+                            espacio.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Captions emplean mínimo 3 líneas de texto.</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Captions y Copies In entregados presentan buena
+                            ortografía.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Caption se encuentra dentro de márgenes.</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Número y nombre de categoría, así como número de
+                            publicación son correctos.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Para los números de teléfono se emplea el formato
+                            111 111 111.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Captions en las publicaciones de la Línea de
+                            contenido relacionada a "entradas de blog" contiene
+                            el enlace al blog, apartado o lugar correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que imágenes empleadas puedan ser usadas
+                            por diseño.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que imágenes empleadas tengan una calidad
+                            aceptable.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >En caso de realizar un carrusel, se debe detallar
+                            en el comentario correspondiente qué texto va en
+                            cada imagen en el siguiente formato: Imagen 1 - COPY
+                            IN - Enlace.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar si se suministran imágenes propias del
+                            cliente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >(CTA) están alineados con la línea de contenido.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Debe emplearse emojis en caption, estos se
+                            encuentran al inicio o al final de este.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >En la categoría "Frases Célebres" y "Reseñas" si el
+                            texto termina en signo de admiración (!) no se
+                            coloca punto final.</span
+                        >
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">4. Líneas de contenido</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Las líneas de contenido tienen una numeración
+                            correcta.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Las líneas de contenido tienen nombre, con una
+                            ortografía adecuada y coherentes con su propósito.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La línea de contenido 'Reseñas' se podrá generar
+                            normalmente si existen al menos 12 reseñas válidas
+                            (esto aplica cuando hay 5 líneas de contenido; si
+                            hay 4, se necesitan al menos 13 reseñas. En caso de
+                            haber menos líneas, se debe asegurar que la cantidad
+                            de reseñas cubra las necesidades de la fase inicial
+                            y anual). Una reseña válida no se repite, tiene la
+                            calificación máxima (5 estrellas) en las plataformas
+                            que lo permitan, contiene texto y no es reducido. Si
+                            hay entre 7 y 11 reseñas, se podrá generar la línea
+                            de contenido 'Reseñas y Agradecimientos'; si hay 6 o
+                            menos reseñas, se debe omitir esta línea.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El recuadro superior derecho indica si las líneas
+                            fueron propuestas por el cliente o definidas por
+                            estrategia.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">5. Situación Actual</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La imagen corresponde al perfil de la red social,
+                            muestra el porcentaje de tasa de participación y
+                            está enlazada con la red social.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El recuadro superior derecho contiene el logo y
+                            está enlazado correctamente a la red social.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El logo de la red social utilizado corresponde a la
+                            red social con la que se presentará la memoria.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El nombre de usuario es el correspondiente y está
+                            en minúsculas sin espacios.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Nombre correspondiente. Para creación nueva, según
+                            disponibilidad del usuario en la red social a
+                            emplear (No se puede usar el deseado), este nombre
+                            puede modificarse sin dejar de ser alusivo al nombre
+                            comercial y la categoría del cliente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El texto en la parte inferior es coherente, tiene
+                            fluidez, buena ortografía y es acorde.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los campos "Biografía optimizada / CTA", "Logo" e
+                            "Historias destacadas" están completos y
+                            correctamente diligenciados.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >No se realiza análisis de situación actual teniendo
+                            en cuenta que el enlace de rrss correspondiente.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">6. Look & Feel</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La imagen del referente está correctamente
+                            enlazada.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se encuentra la imagen de referencia y coincide con
+                            el estilo o perfil indicado.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">7. Competencia</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El recuadro superior derecho indica si los
+                            competidores fueron propuestos por el cliente o
+                            definidos por estrategia.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El recuadro izquierdo central contiene la imagen o
+                            el logo del competidor y está enlazado a la página
+                            web o redes sociales correspondientes.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El nombre del competidor o competidores es el
+                            correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Cada campo debajo de los iconos de web y redes
+                            sociales identifica correctamente si el competidor
+                            dispone de cada uno de estos.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Cada símbolo de check está correctamente enlazado.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La fecha del análisis coincide en mes y año con la
+                            fecha indicada en la primera diapositiva.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La observación dejada por estrategia es coherente,
+                            tiene cohesión, buena ortografía y es acorde al
+                            competidor o competidores.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El competidor desarrolla la misma o una labor
+                            comercial similar a la del cliente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El recuadro superior derecho contiene el logo o
+                            imagen del competidor y está enlazado a su web o red
+                            social.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Junto al título ANÁLISIS DE LA COMPETENCIA se
+                            encuentra el nombre del competidor.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La imagen muestra la tasa de participación, el
+                            porcentaje por encima o debajo del promedio, el logo
+                            y el nombre de usuario correspondientes.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El campo "Tasa de participación" muestra el mismo
+                            porcentaje que la imagen.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se responden las preguntas: ¿A qué se debe esta
+                            situación? y ¿Cómo nos podemos diferenciar?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se evidencian tres respuestas a las preguntas, las
+                            cuales son concisas, coherentes, tienen buena
+                            ortografía y mantienen cohesión.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La diapositiva estandarizada "Análisis de la
+                            competencia" debe ser eliminada si el proyecto no
+                            cuenta con un estudio sobre los competidores.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >No se realiza el análisis de los competidores
+                            propuestos por el cliente en el brief.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">8. Tono</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Campo "Tono de comunicación" tiene al menos dos
+                            adjetivos y estos concuerdan con el proyecto.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Campo "Cómo le habla a tu audiencia" dice SINGULAR
+                            (yo) o PLURAL (nosotros) o un tono que concuerde.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Campo "Cómo se dirige a tu audiencia" dice SINGULAR
+                            (tú) o un tono que concuerde.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Campo "Uso emojis" expresa claramente si se deben
+                            usar o no emojis.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Tono usado es acorde al proyecto.</span>
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">9. Buyer</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Imagen representa el género que se emplea la
+                            descripción</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Descripción acorde al público objetivo del cliente
+                            y tiene los siguientes elementos: Nombre, Edad,
+                            Interés</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se emplean dos tipos de contenido diferentes con
+                            tres ejemplos acordes cada uno</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">10. CTA</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Se muestra mínimo un CTA por Línea de contenido.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >CTAs son coherentes, con buena ortografía y tienen
+                            cohesión.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La información mostrada corresponde al cliente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Links empleados omiten la representación del
+                            protocolo seguro de transferencia de hipertexto
+                            (https) y no llevan punto final.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Debe emplearse emojis en un CTA estos se encuentran
+                            al inicio de este.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los correos electrónicos están escritos
+                            correctamente.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    11. Motivo de elección RRSS
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El campo "Red social a gestionar" especifica la red
+                            social que se utilizará para memoria.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El texto menciona la misma red social que el campo
+                            "Red social a gestionar" y explica claramente el
+                            motivo de su elección.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">12. KPI's</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El campo "Red Seleccionada" indica la red social
+                            con la que se presentará la memoria.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los íconos de las redes sociales seleccionadas
+                            (Instagram y Facebook o LinkedIn) que aparecen a la
+                            derecha corresponden a la red social con las que se
+                            presentará la memoria.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >El Plan de Contenido/Acción (OBJETIVOS) indica la
+                            red social con la que se presentará la memoria.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los proyectos que son META (Instagram y Facebook)
+                            incluyen un texto explicativo sobre las
+                            publicaciones que se replican en ambas redes.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">13. KPI's</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Cada línea de contenido incluye al menos cinco
+                            hashtags.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los títulos de cada línea de contenido van
+                            acompañados de sus respectivos hashtags.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Los hashtags utilizados tienen buena ortografía y
+                            son acordes al cliente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto multidioma, los hashtags y títulos están
+                            traducidos y añadidos en la diapositiva siguiente a
+                            la versión en español.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Hashtags no se repiten dentro de la misma Línea de
+                            contenido.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Dos o más líneas de contenido no deben tener los
+                            mismos hashtags.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >En las diapositivas de las publicaciones los
+                            hashtags deben estar alineados a la izquierda y no
+                            deben interrumpir ningún elemento de la
+                            presentación.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    14. Diapositivas estandarizadas
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Las diapositivas estandarizadas, no deben modificarse por contenido específico del proyecto.</span
+                        >
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+</LayoutsChecklist>
+<CheckboxCounter />
