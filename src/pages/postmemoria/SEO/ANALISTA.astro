@@ -1,1 +1,452 @@
-<h1>SEO Pagina</h1>
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Analista";
+const migaPan = "Post Memoria / SEO /";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Prememoria" class="hover:scale-105">{migaPan}<span class="ml-2">{title}</span></a>
+            
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">1. PRESENTACIÓN CLIENTE</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Agregar una captura del brief en la tarea de
+                            ClickUp: Keyword research.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Abrir la carpeta del cliente y crear una copia de
+                            la presentación oficial alojada en la carpeta de
+                            plantillas de SEO. Esto solo en el caso de que aún
+                            no haya sido creada por otra persona del equipo. No
+                            se debe utilizar la presentación creada por defecto
+                            de “Isaac Cabello”.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Estado de compartido: “Cualquiera que tenga el
+                            enlace” - Comentador.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se encuentra el enlace del documento de la ppt en
+                            ClickUp en el campo llamado: LINK: PRESENTACIÓN
+                            CLIENTE?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se realizó el análisis de palabras clave nuevas a
+                            posicionar en la web y se seleccionaron las 5
+                            principales?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las keywords seleccionadas coinciden con la
+                            temática de la web?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La selección de palabras clave se realizó en el
+                            idioma solicitado por el cliente?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Captura de SE Ranking con las 6 primeras keywords
+                            en el slide ANÁLISIS DE KEYWORDS.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Está linkeada al documento de la estrategia la
+                            lista de palabras clave en la preselección?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Captura de SE Ranking con las 5 keywords
+                            principales en el slide KEYWORDS SELECCIONADAS.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las diapositivas de las optimizaciones cuentan con
+                            imagen de la página a trabajar con las secciones
+                            señaladas?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las diapositivas de las optimizaciones cuentan con
+                            nombre de la página?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las diapositivas de las optimizaciones cuentan con
+                            enlace de la página correctamente linkeado?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las diapositivas de las optimizaciones cuentan con
+                            mínimo 3 de las palabras clave a trabajar que deben
+                            iniciar con la primera letra en mayúscula, finalizar
+                            con un punto, y que se encuentre linkeada a la
+                            sección a la página correspondiente del documento de
+                            la estrategia?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La cantidad de palabras claves es la correcta y
+                            concuerda con las que están en el documento SEO On
+                            Page?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las imágenes de la página se encuentran
+                            organizadas de acuerdo a su tamaño y completas?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El título de la página a intervenir inicia en
+                            mayúscula?</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    2. DOCUMENTO SEO ON PAGE
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Crear una copia del documento SEO On Page alojada
+                            en la carpeta de plantillas de SEO. Esto solo en el
+                            caso de que aún no haya sido creado por otra persona
+                            del equipo. No se debe utilizar el documento creado
+                            por defecto de “Isaac Cabello”.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Estado de compartido: “Cualquiera que tenga el
+                            enlace” - Comentador.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se encuentra el enlace del documento con la
+                            estrategia a realizar en la web en ClickUp en el
+                            campo llamado: LINK: ESTRATEGIA SEO ON PAGE.?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se agregaron las 3 páginas de la web a trabajar (1
+                            en caso de ser una Landing Page)?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Cada página cuenta con mínimo 5 keywords a
+                            trabajar en cada página?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Cada página cuenta con la instrucción del analista
+                            para cada sección a trabajar?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se agregaron las imágenes de la visualización de
+                            la web antes de implementar?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que las keywords principales no estén
+                            repetidas.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Una vez terminado actualizar la tarea en el excel
+                            del equipo SEO.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Informar al equipo por medio de Slack que la
+                            estrategia está terminada.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea.</span
+                        >
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    3. CARPETA CLIENTE / Verificar que al finalizar hayan
+                    quedado creados los siguientes documentos:
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Presentación del cliente</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Documento SEO on page</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Excel con listado de keywords</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Carpeta de “CAPTURAS” con los 3 screenshots de las
+                            páginas a intervenir</span
+                        >
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">4. Feedbacks</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Abrir documento SEO On Page y la presentación del
+                            cliente en busca de comentarios.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar posibles comentarios del CS en los detalles
+                            del proyecto.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Solucionar el feedback de acuerdo a las nuevas
+                            instrucciones del analista o según los comentarios
+                            dejados por el cliente o CS en los documentos y/o
+                            ClickUp (en caso de que no requieran intervención
+                            del analista).</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >NOTA: a cada comentario del cliente se le debe dar
+                            respuesta (no se debe cerrar el comentario, y si es
+                            para aclarar una duda se debe hacer en tercera
+                            persona, para evitar que el cliente los busque
+                            directamente). Solo los CS deben tener comunicación
+                            directa con los clientes.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si el cliente solicita tener en cuenta nuevas KW,
+                            se deben incluir en el listado anterior
+                            asegurándonos de que se muestre el volumen de
+                            búsquedas y la intención. Solo se incluyen en la
+                            estrategia si el analista considera necesario
+                            hacerlo, de lo contrario, se explica en tercera
+                            persona el motivo por el cual estas no aportan a la
+                            estrategia.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se actualizaron las capturas de pantalla en la
+                            presentación en caso de ser necesario?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se actualizaron las capturas de pantalla en el
+                            documento SEO On Page en caso de ser necesario?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Dejar comentario en detalles del proyecto,
+                            indicando que el feedback fue atendido.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar la tarea en el excel del equipo SEO.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Informar al equipo por medio de Slack que el
+                            feedback fue atendido.</span
+                        >
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <CheckboxCounter />
+</LayoutsChecklist>

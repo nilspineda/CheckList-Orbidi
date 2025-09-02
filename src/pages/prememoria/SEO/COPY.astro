@@ -22,164 +22,347 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
         <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
-            <a href="/Prememoria" class="hover:scale-105">{migaPan}</a>
-            <span class="ml-2">{title}</span>
+            <a href="/Prememoria" class="hover:scale-105">{migaPan}<span class="ml-2">{title}</span></a>
+            
         </p>
     </div>
 
     <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
         <div class="space-y-8">
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    1. Investigación y recolección de información
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">1. SEO ON PAGE</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
                         >
                     </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Abrir Brief y documento SEO On Page</span>
+                    </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
+                            >Revisar la web para tener en cuenta el tono de
+                            comunicación de la marca.</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
+                            >¿Cada página cuenta con un metatitulo y
+                            metadescripción sugeridas por el analista, y es
+                            acorde con la temática de la página?</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
+                            >¿Cada página cuenta con los Copies según cada
+                            instrucción, y son acordes con la temática de la
+                            página?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si la estrategia incluye un blog se debe crear
+                            plantilla para blog on page y subirla a la
+                            presentación.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Subir la imagen usada para el blog a la carpeta del
+                            cliente.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Descargar el documento on page y subirlo a la tarea
+                            de copy de Clickup en formato docx.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar la tarea en el excel del equipo SEO.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Informar al equipo por medio de Slack que la
+                            estrategia está terminada.</span
                         >
                     </label>
                 </div>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    2. Redacción y construcción de contenido
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">2. SEO OFF PAGE</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Integré el nombre comercial proporcionado por el
-                            cliente, garantizando coherencia con su identidad de
-                            marca.</span
-                        >
+                        <span>Asignarse y marcar tiempo en tarea.</span>
                     </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Abrir brief y página web del cliente.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Identificar el modelo de negocio.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Redactar artículo para portal de noticias.</span>
+                    </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web quedó con el tono y sujeto gramatical
-                            solicitado en los campos correspondientes del brief,
-                            y en caso de no haberse especificado, se realizó de
-                            acuerdo al contexto del negocio.</span
+                            >¿El artículo está de acuerdo a la temática de la
+                            web del cliente?</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con mínimo 3 apartados y su
-                            estructura web acorde al brief.</span
+                            >¿El artículo es funcional y cuenta con al menos 3
+                            links que dirijan a la web? Los links deben de abrir
+                            en una pestaña nueva.</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Verifiqué que las descripciones cuentan con el
-                            título H1 y que los párrafos quedaron de 4 líneas o
-                            más (si superó las 4 líneas, conservé los espacios).</span
+                            >El artículo debe de tener metatítulo y
+                            metadescripción.</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Dejé todo el contenido de la web en castellano.
-                            (Excepto palabras puntuales que el cliente maneje en
-                            otro idioma. Ej: Portfolio)</span
+                            >Seleccionar la categoría que mejor se adecúe a la
+                            temática del artículo.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que la lecturabilidad esté en 60 pts en
+                            adelante. En el caso de Yoast SEO debe estar la
+                            puntuación en color verde - portal Ciencia Crónica.
+                            En este portal el artículo debe de tener: Frase
+                            clave objetivo, Titulo SEO, Metadescripción, Slug,
+                            asignación a categoría.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Establecer imagen destacada.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Crear texto alternativo en imagen destacada.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Publicar el artículo.</span>
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se agregó la imagen, el enlace correctamente
+                            linkeado, el nombre de la página y el título del
+                            artículo a la presentación?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Dejar el link del artículo en la tarea de click up
+                            y en la tabla de excel</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea</span
                         >
                     </label>
                 </div>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    3. Revisión de estilo y calidad
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">3. Feedbacks</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con textos sin errores ortográficos y
-                            sin lorem (y si tenía web actual, validé errores
-                            ortográficos).</span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
                         >
                     </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Revisé o cambié el tono del texto que acompaña los
-                            iconos de las redes sociales en el footer. (Ej:
-                            Síguenos o Sígueme)</span
-                        >
-                    </label>
-                </div>
-            </section>
 
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    4. Validaciones técnicas y de usabilidad (desde copy)
-                </h2>
-                <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con Reviews de Google Maps (incluido
-                            el mapa) y RRSS.</span
+                            >Abrir documento SEO On Page y la presentación del
+                            cliente en busca de comentarios.</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con botones funcionales y botón de
-                            accesibilidad.</span
+                            >Revisar posibles comentarios del CS en los detalles
+                            del proyecto.</span
                         >
                     </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span>La web cuenta con botón CTA.</span>
-                    </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con los formatos de teléfono,
-                            horarios, dirección y precios correctos.</span
+                            >Solucionar el feedback de acuerdo a las nuevas
+                            instrucciones del analista o según los comentarios
+                            dejados por el cliente o CS en los documentos y/o
+                            Clickup (en caso de que no requieran intervención
+                            del analista).</span
                         >
                     </label>
+
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Validé que en caso de que el cliente no tuviera
-                            información de contacto, dejé solo correo
-                            electrónico y número telefónico.</span
+                            >NOTA: a cada comentario del cliente se le debe dar
+                            respuesta (no se debe cerrar el comentario, y si es
+                            para aclarar una duda se debe hacer en tercera
+                            persona, para evitar que el cliente los busque
+                            directamente). Solo los CS deben tener comunicación
+                            directa con los clientes.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Cada página cuenta con un metatitulo y
+                            metadescripción sugeridas por el analista, y es
+                            acorde con la temática de la página?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Cada página cuenta con los Copies según cada
+                            instrucción, y son acordes con la temática de la
+                            página?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Descargar el documento on page actualizado y
+                            subirlo a la tarea de copy de Clickup en formato
+                            docx.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Dejar comentario en detalles del proyecto,
+                            indicando que el feedback fue atendido.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar la tarea en el excel del equipo SEO.</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Informar al equipo por medio de Slack que el
+                            feedback fue atendido.</span
                         >
                     </label>
                 </div>
             </section>
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />

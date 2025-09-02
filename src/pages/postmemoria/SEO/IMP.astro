@@ -1,1 +1,378 @@
-<h1>SEO Pagina</h1>
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Implementacion";
+const migaPan = "Post Memoria / SEO /";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Prememoria" class="hover:scale-105">{migaPan}  <span class="ml-2">{title}</span></a>
+           
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">1. SETUPS</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea "Setup Interno" e iniciar el
+                            registro del tiempo.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar existencia de carpetas y presentaciones
+                            (crear si no existen)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Eliminar presentación "ISAAC" si existe y crear
+                            nueva a partir de una copia de la plantilla oficial
+                            alojada en la carpeta de plantillas SEO</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se encuentra el enlace del documento de la ppt en
+                            clickup en el campo llamado: LINK: PRESENTACIÓN
+                            CLIENTE?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los datos del proyecto como Nombre comercial, NIF
+                            Y razón social coinciden con el brief y se
+                            encuentran en la presentación?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se agregaron las gráficas de tráfico orgánico y
+                            keywords posicionadas actualmente en la web?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La url es visible en la gráfica del análisis
+                            global de la web del cliente?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se realizó el análisis de palabras clave orgánicas
+                            posicionadas actualmente y se agregó a la
+                            presentación?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los competidores agregados por el cliente en el
+                            brief son los analizados en la estrategia?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se encuentra el dominio del cliente en la gráfica
+                            de análisis de los competidores?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se analizaron las palabras clave comunes entre el
+                            cliente y sus competidores? (Solo pueden analizarse
+                            TODAS las palabras clave, si el cliente no tiene
+                            ninguna palabra clave posicionada)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La presentación cuenta con las 3 gráficas de
+                            análisis de al menos 2 competidores directos?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Las gráficas de análisis de los competidores
+                            directos cuentan con el dominio de cada web tanto en
+                            la gráfica como en la diapositiva?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los textos e imágenes por default de la
+                            presentación fueron reemplazados y hacen sentido con
+                            el análisis de la web?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar la tarea en el excel del equipo SEO.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    2. DIAGNÓSTICO E INFORME
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los archivos robots.txt y sitemap están
+                            configurados y existen (En caso de no existir, debe
+                            estar especificado en la ppt)?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se realizó el informe speed con la web y los
+                            valores coinciden con los de la presentación?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se realizó la evaluación de crawlability de la web
+                            y se muestran los principales errores que presenta
+                            la web?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Si la web no es responsive se agregó la
+                            diapositiva del reporte de incompatibilidad?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Agregar los datos solicitados en todos los slides
+                            de SEO TÉCNICO y OPTIMIZACIONES.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que los enlaces añadidos en los slides de
+                            RESUMEN, funcionen correctamente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se creó el informe en SE Ranking y se programó
+                            para envío mensual al correo produccion@orbidi.com?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se dejó mensaje de informe creado en los detalles
+                            del proyecto en clickup?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar las tareas en el excel del equipo SEO.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">3. ALTA EN DIRECTORIOS</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Abrir y revisar la información del brief</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Crear los directorios basados en los datos del
+                            brief. De no tenerlos, acudir a los datos de la web.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se agregaron los directorios, la imagen de
+                            previsualización y el enlace correctamente linkeado
+                            del mismo a las diapositivas en la ppt?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los 2 directorios cuentan con la información
+                            correcta de la web en el brief?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Actualizar la tarea en el excel del equipo SEO.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Si es el último paso en el proyecto poner TAG
+                            revisión QA.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Detener el registro del tiempo y cerrar tarea</span
+                        >
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold mb-4">4. PRODUCCIÓN 3 y 6</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asignarse la tarea e iniciar el registro del
+                            tiempo.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se implementaron todos los textos en la
+                            estrategia?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se implementó el meta título y la meta
+                            descripción?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se hicieron las asignaciones de H1, H2 Y H3 según
+                            haya solicitado el analista en la estrategia?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se respetaron los estilos del sitio (color,
+                            tipografía, tamaños de texto, espaciados)?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los call to action de la web funcionan
+                            correctamente y direccionan a la página correcta?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La web es responsive en los diferentes
+                            dispositivos?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La página se encuentra indexada correctamente?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>¿Se instaló el search console?</span>
+                    </label>
+                </div>
+            </section>
+        </div>
+        <CheckboxCounter />
+    </div></LayoutsChecklist
+>

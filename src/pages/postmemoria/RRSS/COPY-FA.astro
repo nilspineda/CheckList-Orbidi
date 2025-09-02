@@ -2,8 +2,8 @@
 import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
 import "../../../assets/styles/global.css";
 
-const title = "Copy";
-const migaPan = "Pre Memoria / Web";
+const title = "Copy Fase Anual";
+const migaPan = "Post Memoria / RRSS";
 
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
@@ -22,8 +22,9 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
         <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
-            <a href="/Prememoria" class="hover:scale-105">{migaPan}<span class="ml-2">{title}</span></a>
-            
+            <a href="/Postmemoria" class="hover:scale-105"
+                >{migaPan}<span class="ml-2">{title}</span></a
+            >
         </p>
     </div>
 
@@ -31,155 +32,162 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
         <div class="space-y-8">
             <section>
                 <h2 class="text-2xl font-bold mb-4">
-                    1. Investigación y recolección de información
+                    1. Organización de la ppt
                 </h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >Organizar 37 slides nuevos siguiendo el orden de
+                            las líneas de contenido definidas en la fase inicial</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
+                            >Validación de los hashtag y CTA correspondientes</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
+                            >Revisar comentario de la ppt y click up por si el
+                            cliente tiene solicitudes especiales o fdk</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
+                            >Revisar que el formato de la imagen sea el
+                            correspondiente</span
                         >
                     </label>
                 </div>
             </section>
-
             <section>
                 <h2 class="text-2xl font-bold mb-4">
-                    2. Redacción y construcción de contenido
+                    2. Creación de contenidos
                 </h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Integré el nombre comercial proporcionado por el
-                            cliente, garantizando coherencia con su identidad de
-                            marca.</span
+                            >Asegurar que los Copies creados correspondan a las
+                            líneas de contenido definidas desde la fase inicial</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web quedó con el tono y sujeto gramatical
-                            solicitado en los campos correspondientes del brief,
-                            y en caso de no haberse especificado, se realizó de
-                            acuerdo al contexto del negocio.</span
+                            >Asegurar que no haya contenido repetido con la fase
+                            inicial</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con mínimo 3 apartados y su
-                            estructura web acorde al brief.</span
+                            >Revisar que el formato de copy para las categorías
+                            fechas especiales y frases célebres sea el correcto
+                            y máximo 1 año después de la emisión de factura</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Verifiqué que las descripciones cuentan con el
-                            título H1 y que los párrafos quedaron de 4 líneas o
-                            más (si superó las 4 líneas, conservé los espacios).</span
+                            >Asegurar que no haya ningún error en puntuación,
+                            ortografía ni errores gramaticales</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Dejé todo el contenido de la web en castellano.
-                            (Excepto palabras puntuales que el cliente maneje en
-                            otro idioma. Ej: Portfolio)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    3. Revisión de estilo y calidad
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con textos sin errores ortográficos y
-                            sin lorem (y si tenía web actual, validé errores
-                            ortográficos).</span
+                            >Asegurar que las imágenes sugeridas a diseño sean
+                            acordes al post y que no estén repetidas (salvo en
+                            los casos que aplique)</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé o cambié el tono del texto que acompaña los
-                            iconos de las redes sociales en el footer. (Ej:
-                            Síguenos o Sígueme)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    4. Validaciones técnicas y de usabilidad (desde copy)
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con Reviews de Google Maps (incluido
-                            el mapa) y RRSS.</span
+                            >Asegurar que el formato de la ppt cumpla con el
+                            estándar definido en cuanto a espacios, puntos,
+                            tipografía, tamaño de letra y espaciado</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con botones funcionales y botón de
-                            accesibilidad.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span>La web cuenta con botón CTA.</span>
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con los formatos de teléfono,
-                            horarios, dirección y precios correctos.</span
+                            >Asegurar que el tono de comunicación sea acorde con
+                            el empleado en la fase inicial</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Validé que en caso de que el cliente no tuviera
-                            información de contacto, dejé solo correo
-                            electrónico y número telefónico.</span
+                            >Asegurar que el caption y copy corresponden a Línea
+                            de contenido son coherentes, con buena ortografía y
+                            tienen cohesión</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que los Hashtags usados corresponden a la
+                            Línea de contenido y/o publicación (según idioma) y
+                            son únicos</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >En el caso de realizar un carrusel, se debe
+                            detallar en el comentario correspondiente qué texto
+                            va en cada imagen en el siguiente formato: Imagen 1
+                            - COPY IN - Enlace</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que los captions en las publicaciones de
+                            la Línea de contenido relacionada a "entradas de
+                            blog" contiene el enlace al blog, apartado o lugar
+                            correspondiente</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que las imágenes utilizadas tienen buena
+                            calidad y pueden ser utilizadas por diseño (a no ser
+                            que el cliente solicite imágenes específicas)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que para los números de teléfono se emplea
+                            el formato 111 111 111</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que los CTA son coherentes con la línea
+                            de contenido trabajada</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que la fuente empleada en captions es SEN
+                            y su tamaño es 10 o 9 y el interlineado 1,15 o
+                            Sencillo si se requiere por espacio</span
                         >
                     </label>
                 </div>
             </section>
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />

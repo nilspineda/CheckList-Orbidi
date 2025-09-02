@@ -2,8 +2,8 @@
 import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
 import "../../../assets/styles/global.css";
 
-const title = "Copy PENDIENTE"
- const migaPan = "Post Memoria / Web";
+const title = "Diseño Fase Anual";
+const migaPan = "Post Memoria / RRSS";
 
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
@@ -19,7 +19,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
             <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
             <h1 class="text-5xl text-black font-semibold">{title}</h1>
         </div>
-                     <p
+        <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
             <a href="/Postmemoria" class="hover:scale-105"
@@ -31,156 +31,124 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
     <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
         <div class="space-y-8">
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    1. Investigación y recolección de información
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">1. Revisión de la ppt</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >Se revisan las líneas de contenido para asegurar
+                            que se continúe con lo definido en fase inicial</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
+                            >Se revisan los Copies y las imágenes para asegurar
+                            que no se hayan repetido tanto en fase inicial como
+                            en fase anual</span
                         >
                     </label>
                 </div>
             </section>
-
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    2. Redacción y construcción de contenido
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">2. Creación de los post</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Revisión del Canva y archivos</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Integré el nombre comercial proporcionado por el
-                            cliente, garantizando coherencia con su identidad de
-                            marca.</span
+                            >Se nombran las publicaciones por contenido y número
+                            en el Canva</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Asegurar que las imágenes no se repitan</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que los nombres de los autores deben
+                            aparecer en una sola línea; si esto no es posible,
+                            los nombres y apellidos deben distribuirse de manera
+                            equilibrada entre las líneas utilizadas.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Verificar el uso adecuado de las márgenes</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Verificar que el diseño no presenta espacios vacíos
+                            innecesarios.</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web quedó con el tono y sujeto gramatical
-                            solicitado en los campos correspondientes del brief,
-                            y en caso de no haberse especificado, se realizó de
-                            acuerdo al contexto del negocio.</span
+                            >Acomodar las imágenes de acuerdo a los post
+                            correspondientes</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con mínimo 3 apartados y su
-                            estructura web acorde al brief.</span
+                            >Acomodar los cuadros de texto y elementos gráficos
+                            de la plantilla de acuerdo a los post
+                            correspondientes</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Verifiqué que las descripciones cuentan con el
-                            título H1 y que los párrafos quedaron de 4 líneas o
-                            más (si superó las 4 líneas, conservé los espacios).</span
+                            >Asegurar que los post cumplan con el estilo gráfico
+                            definido en la fase inicial, en cuanto a espacios,
+                            puntos, tipografía, tamaño de letra y espaciado,
+                            color, etc</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Dejé todo el contenido de la web en castellano.
-                            (Excepto palabras puntuales que el cliente maneje en
-                            otro idioma. Ej: Portfolio)</span
+                            >Asegurar el uso adecuado del logo en los post en
+                            los que aplique</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que el número de publicaciones sea
+                            correcto (37)</span
                         >
                     </label>
                 </div>
             </section>
-
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    3. Revisión de estilo y calidad
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">3. Entrega del Drive</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con textos sin errores ortográficos y
-                            sin lorem (y si tenía web actual, validé errores
-                            ortográficos).</span
+                            >Asegurarse que los post estén nombrados
+                            correctamente: nombre del cliente-publicación
+                            X-categoría</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé o cambié el tono del texto que acompaña los
-                            iconos de las redes sociales en el footer. (Ej:
-                            Síguenos o Sígueme)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    4. Validaciones técnicas y de usabilidad (desde copy)
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con Reviews de Google Maps (incluido
-                            el mapa) y RRSS.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con botones funcionales y botón de
-                            accesibilidad.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span>La web cuenta con botón CTA.</span>
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con los formatos de teléfono,
-                            horarios, dirección y precios correctos.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Validé que en caso de que el cliente no tuviera
-                            información de contacto, dejé solo correo
-                            electrónico y número telefónico.</span
+                            >Asegurarse que los post queden subidos en la
+                            carpeta de fase anual</span
                         >
                     </label>
                 </div>
             </section>
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />

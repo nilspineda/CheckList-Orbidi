@@ -1,0 +1,220 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Diseño Implementador Inicial";
+const migaPan = "Post Memoria / RRSS";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Postmemoria" class="hover:scale-105"
+                >{migaPan}<span class="ml-2">{title}</span></a
+            >
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    1. Revisión del proyecto
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que no haya feedback y/o comentarios
+                            abiertos en la presentación o en click up</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que el proyecto esté vinculado a
+                            Metricool</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que la red social vinculada coincida con
+                            la gestionada en la ppt y presentada en la primera
+                            memoria</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Ajustar los cambios de la red social en la ppt
+                            cuando corresponda</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que la red social vinculada corresponda
+                            al cliente y proyecto a programar</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">2. Programación</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse de incluir toda la información
+                            solicitada en el generador de Metricool: día, hora,
+                            fecha de última publicación, red social, fase de
+                            producción a la que pertenece</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar que en el archivo CSV estén los espacios
+                            correctos, al igual que en los captions y CTA</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar que los post correspondan al orden definido
+                            en la ppt</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que se programen los idiomas
+                            correspondientes y esté siempre presente el español</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar que se subieron la cantidad de post
+                            correctos</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurar que el caption de las publicaciones en
+                            multiidioma conserven la misma estructura en los
+                            diferentes idiomas</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Asegurarse que las imágenes sean visibles</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Llenar la fecha de última publicación en click up</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Marcar el check de programación fase inicial en
+                            click up</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que las publicaciones múltiples en un
+                            mismo día están programadas en horarios diferentes</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">3. Informe</h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Seleccionar la plantilla correspondiente (KDP)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse de utilizar el texto correspondiente, el
+                            cual está en notion</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que quede el correo de Orbidi y el
+                            correo del cliente (en los casos en los que no está
+                            el correo del cliente, solo se utiliza el correo de
+                            Orbidi)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Asegurarse que quede guardado</span>
+                    </label>
+                </div>
+            </section>
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    4. Optimización del perfil
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar el brief para asegurarnos que tenemos los
+                            accesos a la red social del cliente</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse de utilizar la misma información que
+                            aparece en la ppt, en la red social a optimizar</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse de que la foto de perfil y/o imagen de
+                            portada, corresponda a la que está en el drive</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >En los casos en los que no contemos con los
+                            accesos, se debe dejar comentario en click up para
+                            informar a QA</span
+                        >
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+    <CheckboxCounter />
+</LayoutsChecklist>

@@ -2,8 +2,8 @@
 import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
 import "../../../assets/styles/global.css";
 
-const title = "Copy";
-const migaPan = "Pre Memoria / Web";
+const title = "Implementador Fase Anual";
+const migaPan = "Post Memoria / RRSS";
 
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
@@ -22,8 +22,9 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
         <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
-            <a href="/Prememoria" class="hover:scale-105">{migaPan}<span class="ml-2">{title}</span></a>
-            
+            <a href="/Postmemoria" class="hover:scale-105"
+                >{migaPan}<span class="ml-2">{title}</span></a
+            >
         </p>
     </div>
 
@@ -31,155 +32,122 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
         <div class="space-y-8">
             <section>
                 <h2 class="text-2xl font-bold mb-4">
-                    1. Investigación y recolección de información
+                    1. Revisión del proyecto
                 </h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >Asegurarse que no haya feedback y/o comentarios
+                            abiertos en la presentación o en click up</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
+                            >Asegurarse que el proyecto esté vinculado a
+                            Metricool</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
+                            >Asegurarse que la red social vinculada coincida con
+                            la gestionada en la ppt y presentada en la primera
+                            memoria</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
+                            >Ajustar los cambios de la red social en la ppt
+                            cuando corresponda</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Asegurarse que la red social vinculada corresponda
+                            al cliente y proyecto a programar</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Revisar la fecha de emisión de factura para saber
+                            cómo es el orden correcto para programar</span
                         >
                     </label>
                 </div>
             </section>
-
             <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    2. Redacción y construcción de contenido
-                </h2>
+                <h2 class="text-2xl font-bold mb-4">2. Programación</h2>
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Integré el nombre comercial proporcionado por el
-                            cliente, garantizando coherencia con su identidad de
-                            marca.</span
+                            >Asegurarse de incluir toda la información
+                            solicitada en el generador de Metricool: día, hora,
+                            fecha de última publicación, red social, fase de
+                            producción a la que pertenece</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web quedó con el tono y sujeto gramatical
-                            solicitado en los campos correspondientes del brief,
-                            y en caso de no haberse especificado, se realizó de
-                            acuerdo al contexto del negocio.</span
+                            >Revisar que en el archivo CSV estén los espacios
+                            correctos, al igual que en los captions y CTA</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con mínimo 3 apartados y su
-                            estructura web acorde al brief.</span
+                            >Revisar que los post correspondan al orden definido
+                            en la ppt</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Verifiqué que las descripciones cuentan con el
-                            título H1 y que los párrafos quedaron de 4 líneas o
-                            más (si superó las 4 líneas, conservé los espacios).</span
+                            >Asegurar que se programen los idiomas
+                            correspondientes y esté siempre presente el español</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Dejé todo el contenido de la web en castellano.
-                            (Excepto palabras puntuales que el cliente maneje en
-                            otro idioma. Ej: Portfolio)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    3. Revisión de estilo y calidad
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con textos sin errores ortográficos y
-                            sin lorem (y si tenía web actual, validé errores
-                            ortográficos).</span
+                            >Revisar que se subieron la cantidad de post
+                            correctos</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé o cambié el tono del texto que acompaña los
-                            iconos de las redes sociales en el footer. (Ej:
-                            Síguenos o Sígueme)</span
+                            >Asegurar que el caption de las publicaciones en
+                            multiidioma conserven la misma estructura en los
+                            diferentes idiomas</span
                         >
                     </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    4. Validaciones técnicas y de usabilidad (desde copy)
-                </h2>
-                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Asegurarse que las imágenes sean visibles</span>
+                    </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con Reviews de Google Maps (incluido
-                            el mapa) y RRSS.</span
+                            >Llenar la fecha de última publicación en click up</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con botones funcionales y botón de
-                            accesibilidad.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span>La web cuenta con botón CTA.</span>
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con los formatos de teléfono,
-                            horarios, dirección y precios correctos.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Validé que en caso de que el cliente no tuviera
-                            información de contacto, dejé solo correo
-                            electrónico y número telefónico.</span
+                            >Asegurarse que las publicaciones múltiples en un
+                            mismo día están programadas en horarios diferentes</span
                         >
                     </label>
                 </div>
             </section>
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />
