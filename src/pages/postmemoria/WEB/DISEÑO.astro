@@ -2,7 +2,7 @@
 import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
 import "../../../assets/styles/global.css";
 
-const title = "Copy";
+const title = "Diseño";
 const migaPan = "Post Memoria / Web";
 
 import logo from "../../../assets/img/logo.svg";
@@ -19,7 +19,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
             <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
             <h1 class="text-5xl text-black font-semibold">{title}</h1>
         </div>
-               <p
+        <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
             <a href="/Postmemoria" class="hover:scale-105"
@@ -38,149 +38,212 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >Si el logo sufrió modificaciones, ¿el diseñador
+                            dejó el logo actualizado junto con los archivos
+                            vectorizados?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
+                            >¿El logo y favicon en la web se ajustaron
+                            correctamente a lo solicitado por el cliente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
+                            >¿La maqueta sigue el diseño actual, incluyendo
+                            nuevos apartados, según el branding y/o referente
+                            solicitado por el cliente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    2. Redacción y construcción de contenido
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >Integré el nombre comercial proporcionado por el
-                            cliente, garantizando coherencia con su identidad de
-                            marca.</span
+                            >¿El diseño se ciñe a los colores, tono y
+                            tipografías solicitados por el cliente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web quedó con el tono y sujeto gramatical
-                            solicitado en los campos correspondientes del brief,
-                            y en caso de no haberse especificado, se realizó de
-                            acuerdo al contexto del negocio.</span
+                            >¿Las imágenes representan correctamente la
+                            categoría del negocio?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con mínimo 3 apartados y su
-                            estructura web acorde al brief.</span
+                            >¿Se aplicó correctamente el nombre comercial en el
+                            logo y en los textos?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Verifiqué que las descripciones cuentan con el
-                            título H1 y que los párrafos quedaron de 4 líneas o
-                            más (si superó las 4 líneas, conservé los espacios).</span
+                            >¿Se ajustaron correctamente los productos,
+                            servicios y contexto según las solicitudes del
+                            cliente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Dejé todo el contenido de la web en castellano.
-                            (Excepto palabras puntuales que el cliente maneje en
-                            otro idioma. Ej: Portfolio)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    3. Revisión de estilo y calidad
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con textos sin errores ortográficos y
-                            sin lorem (y si tenía web actual, validé errores
-                            ortográficos).</span
+                            >¿Las entradas del inicio se ajustaron de acuerdo a
+                            las nuevas secciones creadas?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé o cambié el tono del texto que acompaña los
-                            iconos de las redes sociales en el footer. (Ej:
-                            Síguenos o Sígueme)</span
-                        >
-                    </label>
-                </div>
-            </section>
-
-            <section>
-                <h2 class="text-2xl font-bold mb-4">
-                    4. Validaciones técnicas y de usabilidad (desde copy)
-                </h2>
-                <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con Reviews de Google Maps (incluido
-                            el mapa) y RRSS.</span
+                            >¿Los nuevos textos corresponden exactamente a lo
+                            solicitado por el cliente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >La web cuenta con botones funcionales y botón de
-                            accesibilidad.</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span>La web cuenta con botón CTA.</span>
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >La web cuenta con los formatos de teléfono,
-                            horarios, dirección y precios correctos.</span
+                            >¿Se dejaron los textos de blogs, proyectos,
+                            productos y/o servicios en Figma o en el kit
+                            digital?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Validé que en caso de que el cliente no tuviera
-                            información de contacto, dejé solo correo
-                            electrónico y número telefónico.</span
+                            >¿La maqueta presenta problemas de márgenes,
+                            imágenes no acordes, iconos incorrectos, textos con
+                            errores ortográficos o textos de Lorem Ipsum?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se incluyeron los elementos gráficos como mapa,
+                            botón de WhatsApp, reseñas de Google Maps y redes
+                            sociales solicitadas por el cliente?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se incluye todos los elementos publicitarios
+                            requeridos por el Kit Digital? (No aplica fuera de
+                            subvención o PO)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El footer incluye los elementos mínimos requeridos
+                            por el Kit Digital? (Logo y legales)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se ajustó el diseño de la web con la información
+                            de contacto solicitada por el cliente?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La web tiene los 3 apartados mínimos requeridos?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La web garantiza que todo el contenido está en
+                            castellano? (No aplica fuera de subvención o PO)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La maqueta sigue la estructura y plantilla de la
+                            web actual o referente?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se realizaron correctamente cambios estructurales
+                            o nuevos elementos?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se ajustó o eliminó el CTA según lo requerido?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El Figma tiene la nomenclatura de feedback
+                            revisado?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>¿La calidad de las imágenes es adecuada?</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El formato de precio coincide con lo solicitado?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Los iconos representan visualmente el elemento y
+                            su función?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Todos los textos fueron revisados para evitar
+                            errores?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>¿Los cambios respetan la identidad visual?</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El diseñador no ejecutó el replies de confirmación
+                            o justificación?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se dejaron solicitudes claras por parte de diseño?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se dejaron solicitudes claras por parte de copy?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿El diseñador revisó y cumplió lo solicitado en la
+                            documentación?</span
                         >
                     </label>
                 </div>
             </section>
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />
