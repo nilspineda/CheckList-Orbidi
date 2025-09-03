@@ -2,8 +2,8 @@
 import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
 import "../../../assets/styles/global.css";
 
-const title = "Copy PENDIENTE"
- const migaPan = "Post Memoria / Web";
+const title = "Copy";
+const migaPan = "Post Memoria / Web";
 
 import logo from "../../../assets/img/logo.svg";
 import Image from "astro/components/Image.astro";
@@ -19,7 +19,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
             <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
             <h1 class="text-5xl text-black font-semibold">{title}</h1>
         </div>
-                     <p
+        <p
             class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
         >
             <a href="/Postmemoria" class="hover:scale-105"
@@ -38,37 +38,94 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé comentarios en Clickup para validar
-                            información relevante del proyecto.</span
+                            >¿Se ajustaron correctamente los productos,
+                            servicios y contexto según las solicitudes del
+                            cliente en clickup, markup o drive? <strong
+                                class="text-primary"
+                                >(en cuanto a redacción)</strong
+                            ></span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Analicé si el Brief contaba con Web actual (y
-                            confirmé si deseaba o no el mismo contenido), Web de
-                            referencia, tips y/o estructura web solicitada.</span
+                            >¿Los nuevos textos corresponden exactamente a lo
+                            solicitado por el cliente en clickup, markup o
+                            drive?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Revisé la carpeta del cliente (textos, videos,
-                            carpetas de kit diligenciadas)</span
+                            >¿Se dejaron los textos de blogs, proyectos,
+                            productos y/o servicios en Figma, en el kit digital
+                            o un documento más estructurado en el drive?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >Tuve en cuenta el contexto, productos y servicios
-                            solicitados en el brief o figma.</span
+                            >¿Las maquetas existentes o las nuevas se revisaron
+                            para evitar textos en ingles o loremp ipsum?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Todos los textos fueron revisados para evitar
+                            errores?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se dejaron solicitudes claras por parte de copy
+                            para guiar a DISEÑO, QA e IMP?</span
+                        >
+                    </label>
+
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿La web garantiza que todo el contenido está en
+                            castellano? (NO APLICA PARA PROYECTOS FUERA DE LA
+                            SUBVENCIÓN O AUTORIZADO POR PO)</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se actualizó en el KD los titulos y descripciones
+                            de las páginas nuevas? <strong class="text-primary"
+                                >(puede aplicar cuando el cliente solicita
+                                incluir palabras claves para un posicionamiento)</strong
+                            ></span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se deja en el drive la documentación que adjunta
+                            el cliente en markup o clickup?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Se deja secciones sin cambios en las maquetas que
+                            no se ajustan?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Si se crea el figma, se dejó el enlace en el
+                            clickup?</span
                         >
                     </label>
                 </div>
             </section>
-
         </div>
-
     </div>
 </LayoutsChecklist>
 <CheckboxCounter />

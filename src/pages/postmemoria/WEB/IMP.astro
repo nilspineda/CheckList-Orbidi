@@ -35,6 +35,10 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                 <div class="flex flex-col space-y-3">
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
+                        <span>¿Implementaste la ultima versión del figma?</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
                         <span
                             >¿Se ha implementado correctamente el diseño de
                             Figma?</span
@@ -100,8 +104,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >¿Los botones están funcionando correctamente en la
-                            estructura modificada?</span
+                            >¿Los botones están funcionando correctamente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
@@ -114,21 +117,32 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >¿Se realizó la configuración correcta del
-                            ecommerce?</span
+                            >¿Se realizó la configuración correcta del ecommerce
+                            - <span class="text-primary font-bold"
+                                >Carrito-checkout-cuenta-tienda?</span
+                            ></span
                         >
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
-                            >¿El sistema añadido de búsqueda es funcional?</span
-                        >
+                            >¿El sistema añadido de búsqueda es funcional? <span
+                                class="text-primary font-bold">OPCIONAL</span
+                            >
+                        </span>
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
                             >¿Se llevó a cabo el enmascaramiento de manera
                             correcta?</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >¿Si está enmascarado la tipografía funciona
+                            correctamente?</span
                         >
                     </label>
                     <label class="flex items-start gap-2">
@@ -148,8 +162,11 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
                             >¿Se encuentran los datos públicos del whois activos
-                            en el dominio?</span
-                        >
+                            en el dominio? <strong
+                                class="text-primary font-bold"
+                                >PARA MIGRACIONES</strong
+                            >
+                        </span>
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
@@ -166,13 +183,6 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     3. Estructura y Responsividad
                 </h2>
                 <div class="flex flex-col space-y-3">
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >¿Se ha incluido un H1 en cada una de las páginas
-                            implementadas?</span
-                        >
-                    </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
                         <span
@@ -276,11 +286,7 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                     </label>
                     <label class="flex items-start gap-2">
                         <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >¿La web presenta problemas con márgenes, imágenes
-                            no acordes, iconos de contacto incorrectos, textos
-                            con errores ortográficos o textos de Lorem Ipsum?</span
-                        >
+                        <span>¿La web no contiene textos de lorem ipsum?</span>
                     </label>
                 </div>
             </section>
@@ -295,13 +301,6 @@ import CheckboxCounter from "../../../components/CheckboxCounter.astro";
                             >¿La web tiene configuradas las métricas
                             correctamente en Google Search Console y Google
                             Analytics?</span
-                        >
-                    </label>
-                    <label class="flex items-start gap-2">
-                        <input type="checkbox" class="chk-activo mt-1" />
-                        <span
-                            >¿Se encuentran correctamente configurados los
-                            competidores en SE ranking? (Solo para KD-ECOM)</span
                         >
                     </label>
                 </div>
