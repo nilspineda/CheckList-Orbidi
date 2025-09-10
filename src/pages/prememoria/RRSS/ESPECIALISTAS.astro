@@ -1,0 +1,168 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Especialistas";
+const migaPan = "Pre Memoria / RRSS";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Prememoria" class="hover:scale-105"
+                >{migaPan}<span class="ml-2">{title}</span></a
+            >
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    Checklist para {title}
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Presentación del negocio (nombre, descripción,
+                            enlace y subrayados).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Identidad de marca (comentario para diseño).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Tono (adjetivos, tono, uso de emojis).</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Buyer person (género, descripción y bullets
+                            correctos).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Competidor suministrado o propuesto (fecha, nombre,
+                            logo y enlaces correspondientes).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Situación actual (Logo y nombre de la red social
+                            analizar, logo de la marca, imagen de análisis,
+                            análisis y datos complementarios en caso de Lk,
+                            nombre de usuario en caso de nueva creación).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Diagnóstico de interacción (Red social
+                            correspondiente, imagen, enlace y análisis).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Líneas de contenido (nombres y ortografía
+                            correctos, descripciones, más de 13 insumos en el
+                            caso de reseñas o propiedades).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Destacadas (nombres acordes).</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >CTA (1 cta por línea de contenido, datos de
+                            contacto correctos, links sin punto final, formato
+                            de emoji correcto).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Palabras clave (5 palabras clave por línea de
+                            contenido sin repeticiones, articuladas y con
+                            sentido, formato lista obligatorio).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Palabras clave multi idioma (traducción de palabras
+                            clave usadas en español).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Horario de publicación (correcto y sin subrayados).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Motivo de elección (Red social acorde y sin
+                            subrayados, eliminar los que no corresponden).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Publicaciones (comentario con copy prompt o imagen,
+                            coherencia, ortografía y gramática, palabra clave
+                            señalada, sin cambios en el interlineado o tamaño de
+                            la letra, uso correcto de emojis y uso correcto del
+                            formato de frases y números telefónicos).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Perfil optimizado (Nombre comercial, categoría,
+                            descripción en los caracteres establecidos, uso de
+                            enlaces y sin subrayados).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Objetivos (nombre de la red social sin subrayados).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Recomendaciones (Eliminar subrayados, seleccionar y
+                            eliminar los que no corresponden).</span
+                        >
+                    </label>
+                </div>
+            </section>
+        </div>
+    </div>
+</LayoutsChecklist>
+<CheckboxCounter />

@@ -1,0 +1,168 @@
+---
+import LayoutsChecklist from "../../../layouts/Layouts-checklist.astro";
+import "../../../assets/styles/global.css";
+
+const title = "Diseñadores";
+const migaPan = "Pre Memoria / RRSS";
+
+import logo from "../../../assets/img/logo.svg";
+import Image from "astro/components/Image.astro";
+
+import CheckboxCounter from "../../../components/CheckboxCounter.astro";
+---
+
+<LayoutsChecklist>
+    <div
+        class="w-full h-[30dvh] bg-gradient-to-br from-white via-gray-100 to-lime-200 flex flex-col items-center justify-center px-8"
+    >
+        <div class="flex gap-8 items-center flex-col lg:flex-row">
+            <a href="/"><Image src={logo} alt="Logo" class="w-36" /></a>
+            <h1 class="text-5xl text-black font-semibold">{title}</h1>
+        </div>
+        <p
+            class="text-sm border-primary border-2 px-6 rounded-2xl text-gray-400 hover:scale-105 transition-transform mt-6"
+        >
+            <a href="/Prememoria" class="hover:scale-105"
+                >{migaPan}<span class="ml-2">{title}</span></a
+            >
+        </p>
+    </div>
+
+    <div class="w-full p-12 min-h-[80dvh] max-w-5xl mx-auto">
+        <div class="space-y-8">
+            <section>
+                <h2 class="text-2xl font-bold mb-4">
+                    Checklist para {title}
+                </h2>
+                <div class="flex flex-col space-y-3">
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Enlace de canva (enlace obligatorio en clickup).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Uso correcto del Logo (Uso del logo del cliente o
+                            realización de brex).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Especificaciones (Seguimiento de las indicaciones
+                            del cliente y el especialista).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Buenas prácticas de diseño (Márgenes, espacios, 2
+                            tipografías y colores que faciliten la legibilidad).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Post (Coinciden con los comentarios del
+                            especialista, no se repiten imágenes, comillas y
+                            puntos están correctamente aplicados de acuerdo a la
+                            ortografía, gramática y jerarquía).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Destacadas y diseños (Orden y diseño correcto).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Perfil optimizado (Carga de las imágenes en los
+                            mockups).</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Subida de archivos a Drive:</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La carpeta "Fotos de perfil" contiene una imagen
+                            para la foto de perfil y otra para la foto de
+                            portada, ambas con la nomenclatura y proporción
+                            correctas.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La carpeta "Publicaciones: Diseño de las
+                            Plantillas" contiene las imágenes de todos los Key
+                            Visuals e historias destacadas (Proyecto IG+FB) con
+                            la nomenclatura correcta.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >La carpeta "Publicaciones: Semana de Lanzamiento +
+                            Fase Inicial" contiene las imágenes de todas las
+                            publicaciones con la nomenclatura correcta.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Todas las carpetas empleadas por diseño están
+                            almacenadas en el Drive en la ubicación
+                            correspondiente.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span>Uso correcto de nomenclatura:</span>
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Carpeta fotos de perfil: Cliente - Foto de perfil /
+                            Cliente - Foto de portada Facebook / Cliente - Foto
+                            de portada LinkedIn.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Carpeta Publicaciones: Diseño de las Plantillas:
+                            Cliente - Publicación # - Línea de contenido /
+                            Cliente - Story destacada # - Nombre.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Carpeta Publicaciones: Semana de lanzamiento + Fase
+                            inicial: Cliente - Publicación # - Línea de
+                            contenido Carruseles: Cliente - Publicación 1a -
+                            Servicios / Cliente - Publicación 1b - Servicios /
+                            Cliente - Publicación 1c - Servicios.</span
+                        >
+                    </label>
+                    <label class="flex items-start gap-2">
+                        <input type="checkbox" class="chk-activo mt-1" />
+                        <span
+                            >Proyecto con BREX: Carpeta Branding Express tiene
+                            una carpeta nombrada PNG y otra SVG con sus debidos
+                            insumos.</span
+                        >
+                    </label>
+                </div>
+            </section>
+            <CheckboxCounter />
+        </div>
+    </div>
+</LayoutsChecklist>
